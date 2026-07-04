@@ -1,69 +1,194 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Corner</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <h2>Coffee Corner</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Kontak</a></li>
-    </ul>
-</nav>
+    <nav>
 
-<section class="hero" id="home">
-    <h1>Selamat Datang di Coffee Corner</h1>
-    <p>Nikmati kopi terbaik dengan suasana yang nyaman.</p>
-    <button onclick="pesan()">Pesan Sekarang</button>
-</section>
-
-<section id="about">
-    <h2>Tentang Kami</h2>
-    <p>Coffee Corner menyediakan berbagai pilihan kopi berkualitas dengan cita rasa khas Indonesia.</p>
-</section>
-
-<section id="menu">
-    <h2>Menu Favorit</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Espresso</h3>
-            <p>Rp20.000</p>
+        <div class="logo">
+            ☕ Coffee Corner
         </div>
 
-        <div class="card">
-            <h3>Cappuccino</h3>
-            <p>Rp28.000</p>
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#menu">Menu</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <h1>Welcome To Coffee Corner</h1>
+
+        <p>
+            Nikmati secangkir kopi terbaik dengan suasana nyaman dan modern.
+        </p>
+
+        <button onclick="pesan()">
+            Order Now
+        </button>
+
+        <button onclick="darkMode()">
+            🌙 Dark Mode
+        </button>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+
+            Coffee Corner adalah coffee shop yang menyediakan berbagai
+            pilihan kopi berkualitas tinggi dengan cita rasa khas Indonesia.
+            Kami berkomitmen memberikan pengalaman terbaik bagi pelanggan.
+
+        </p>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section id="menu">
+
+        <h2>Best Menu</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Espresso</h3>
+
+                <p>Strong Coffee</p>
+
+                <span>Rp20.000</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Cappuccino</h3>
+
+                <p>Milk Coffee</p>
+
+                <span>Rp28.000</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Latte</h3>
+
+                <p>Soft Coffee</p>
+
+                <span>Rp30.000</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Americano</h3>
+
+                <p>Fresh Coffee</p>
+
+                <span>Rp25.000</span>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <h3>Latte</h3>
-            <p>Rp30.000</p>
+    </section>
+
+
+
+    <!-- GALLERY -->
+
+    <section id="gallery">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+
+            <div class="photo">☕ Espresso</div>
+
+            <div class="photo">🥤 Latte</div>
+
+            <div class="photo">🍰 Dessert</div>
+
+            <div class="photo">🧋 Cappuccino</div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
 
-<section id="contact">
-    <h2>Hubungi Kami</h2>
-    <p>Email : coffeecorner@email.com</p>
-    <p>Telepon : 0812-3456-7890</p>
-</section>
 
-<footer>
-    ©2026 Coffee Corner
-</footer>
+    <!-- CONTACT -->
 
-<script src="script.js"></script>
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input type="text"
+                placeholder="Your Name">
+
+            <input type="email"
+                placeholder="Your Email">
+
+            <textarea
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Coffee Corner | CI/CD Demo Website
+
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
