@@ -88,7 +88,7 @@ jam.style.borderRadius = "10px";
 jam.style.fontWeight = "bold";
 
 document.body.appendChild(jam);
-y
+y;
 setInterval(() => {
   let sekarang = new Date();
 
