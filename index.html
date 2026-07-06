@@ -4,176 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Corner | Premium Coffee Shop</title>
-    <!-- Link CSS Utama -->
+    <title>Coffee Corner</title>
+
     <link rel="stylesheet" href="style.css">
-    <!-- Tambahan: Font Awesome untuk Ikon Modern -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR (Dibuat sticky nanti di CSS) -->
-    <nav class="navbar">
+    <nav>
+
         <div class="logo">
-            <i class="fas fa-coffee"></i> Coffee Corner
+            ☕ Coffee Corner
         </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
             <li><a href="#about">About</a></li>
+
             <li><a href="#menu">Menu</a></li>
+
             <li><a href="#gallery">Gallery</a></li>
+
             <li><a href="#contact">Contact</a></li>
+
         </ul>
-        <!-- Fitur Tambahan: Tombol Dark Mode Pindah ke Navbar agar lebih estetik -->
-        <button id="dark-mode-toggle" class="btn-toggle" onclick="darkMode()">
-            <i class="fas fa-moon"></i>
-        </button>
+
     </nav>
 
-    <!-- HERO SECTION -->
+
+    <!-- HERO -->
+
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome To <span class="highlight">Coffee Corner</span></h1>
-            <p>Nikmati secangkir kopi terbaik dengan suasana nyaman, tenang, dan modern.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="pesan()">
-                    <i class="fas fa-shopping-cart"></i> Order Now
-                </button>
-                <a href="#menu" class="btn btn-secondary">View Menu</a>
-            </div>
-        </div>
+
+        <h1>Welcome To Coffee Corner</h1>
+
+        <p>
+            Nikmati secangkir kopi terbaik dengan suasana nyaman dan modern.
+        </p>
+
+        <button onclick="pesan()">
+            Order Now
+        </button>
+
+        <button onclick="darkMode()">
+            🌙 Dark Mode
+        </button>
+
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section-padding">
-        <div class="container about-container">
-            <div class="about-text">
-                <h2><span>About</span> Us</h2>
-                <p>
-                    Coffee Corner adalah coffee shop yang menyediakan berbagai pilihan kopi berkualitas tinggi dengan cita rasa khas Indonesia. Dipetik langsung dari petani lokal dan disangrai dengan presisi tinggi.
-                </p>
-                <p>
-                    Kami berkomitmen memberikan pengalaman terbaik bagi pelanggan lewat suasana ruang kreatif yang ramah dan menenangkan.
-                </p>
-            </div>
-            <!-- Fitur Tambahan: Placeholder gambar untuk About Us -->
-            <div class="about-image">
-                <div class="image-placeholder"><i class="fas fa-store fa-3x"></i></div>
-            </div>
-        </div>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+
+            Coffee Corner adalah coffee shop yang menyediakan berbagai
+            pilihan kopi berkualitas tinggi dengan cita rasa khas Indonesia.
+            Kami berkomitmen memberikan pengalaman terbaik bagi pelanggan.
+
+        </p>
+
     </section>
 
-    <!-- MENU SECTION -->
-    <section id="menu" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Our Best <span>Menu</span></h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-badge">Best Seller</div>
-                    <div class="card-icon"><i class="fas fa-mug-hot"></i></div>
-                    <h3>Espresso</h3>
-                    <p>Strong & Bold Coffee</p>
-                    <span class="price">Rp20.000</span>
-                </div>
 
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-mug-saucer"></i></div>
-                    <h3>Cappuccino</h3>
-                    <p>Perfect blend of Espresso & Milk Coffee</p>
-                    <span class="price">Rp28.000</span>
-                </div>
+    <!-- MENU -->
 
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-glass-water"></i></div>
-                    <h3>Latte</h3>
-                    <p>Soft & Creamy Coffee</p>
-                    <span class="price">Rp30.000</span>
-                </div>
+    <section id="menu">
 
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-cloud-meatball"></i></div>
-                    <h3>Americano</h3>
-                    <p>Fresh & Light Black Coffee</p>
-                    <span class="price">Rp25.000</span>
-                </div>
+        <h2>Best Menu</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Espresso</h3>
+
+                <p>Strong Coffee</p>
+
+                <span>Rp20.000</span>
+
             </div>
+
+            <div class="card">
+
+                <h3>Cappuccino</h3>
+
+                <p>Milk Coffee</p>
+
+                <span>Rp28.000</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Latte</h3>
+
+                <p>Soft Coffee</p>
+
+                <span>Rp30.000</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Americano</h3>
+
+                <p>Fresh Coffee</p>
+
+                <span>Rp25.000</span>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- GALLERY SECTION -->
-    <section id="gallery" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Our <span>Gallery</span></h2>
-            <div class="gallery-grid">
-                <!-- Diubah menjadi div img-box agar nanti mudah diisi gambar asli via CSS -->
-                <div class="photo-box">
-                    <span class="photo-caption">☕ Espresso</span>
-                </div>
-                <div class="photo-box">
-                    <span class="photo-caption">🥤 Latte</span>
-                </div>
-                <div class="photo-box">
-                    <span class="photo-caption">🍰 Dessert</span>
-                </div>
-                <div class="photo-box">
-                    <span class="photo-caption">🧋 Cappuccino</span>
-                </div>
-            </div>
+
+
+    <!-- GALLERY -->
+
+    <section id="gallery">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+
+            <div class="photo">☕ Espresso</div>
+
+            <div class="photo">🥤 Latte</div>
+
+            <div class="photo">🍰 Dessert</div>
+
+            <div class="photo">🧋 Cappuccino</div>
+
         </div>
+
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section-padding">
-        <div class="container contact-container">
-            <div class="contact-info">
-                <h2><span>Contact</span> Us</h2>
-                <p>Ada pertanyaan atau ingin melakukan reservasi tempat? Hubungi kami sekarang.</p>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Jl. Kopi Nikmat No. 12, Jakarta</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+62 812-3456-7890</p>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input type="text"
+                placeholder="Your Name">
+
+            <input type="email"
+                placeholder="Your Email">
+
+            <textarea
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
     </section>
+
 
     <!-- FOOTER -->
+
     <footer>
-        <div class="footer-content">
-            <p>© 2026 Coffee Corner | CI/CD Demo Website</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
+
+        <p>
+
+            © 2026 Coffee Corner | CI/CD Demo Website
+
+        </p>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
